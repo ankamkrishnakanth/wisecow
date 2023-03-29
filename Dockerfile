@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk add --no-cache bash fortune cowsay
+RUN apk update && apk upgrade && apk add --no-cache bash fortune cowsay
 
 COPY wisecow.sh /app/wisecow.sh
 RUN chmod +x /app/wisecow.sh
