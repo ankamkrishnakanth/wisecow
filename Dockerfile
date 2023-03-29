@@ -7,5 +7,5 @@ RUN chmod +x /app/wisecow.sh
 
 EXPOSE 4499
 
-CMD ["/bin/bash", "-c", "/app/wisecow.sh && tail -f /dev/null"]
+CMD ["/bin/bash", "-c", "/app/wisecow.sh"]
 
